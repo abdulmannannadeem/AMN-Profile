@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Profile | Contact</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header"><nav class="navbar"><a href="index.html" class="logo">Your<span>Name</span></a><button class="menu-toggle" aria-label="Toggle navigation">☰</button><div class="nav-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="contact.html" class="active">Contact</a></div></nav></header>
+
+  <main class="page">
+    <section class="contact-section section-wrap">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h1>Let’s connect and discuss opportunities.</h1>
+        <p>You can use this page for professional enquiries, consulting opportunities, collaborations, or profile introductions.</p>
+        <div class="contact-info">
+          <p><strong>Email:</strong> your.email@example.com</p>
+          <p><strong>Location:</strong> Dubai, UAE</p>
+          <p><strong>LinkedIn:</strong> linkedin.com/in/yourprofile</p>
+        </div>
+      </div>
+
+      <form class="contact-form" onsubmit="return handleForm(event)">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <input type="text" placeholder="Subject" required />
+        <textarea placeholder="Message" rows="6" required></textarea>
+        <button class="btn primary" type="submit">Send Message</button>
+        <p id="form-message"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer><p>© 2026 Your Name. All rights reserved.</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
